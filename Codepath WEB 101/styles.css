@@ -1,0 +1,312 @@
+/*
+  Add style rules for the body of your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+  background-color: powderblue;
+  background-image: url('');
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  color: black;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+/* === HEADER STYLING (already present) === */
+
+h1,h2,h3,h4,h5,h6{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+.header-container {
+  background-color: powderblue;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#header-img {
+  height: 60px;
+  margin-bottom: 10px;
+
+
+}
+
+#header-buttons {
+  margin-top: 10px;
+}
+
+.header-button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 14px;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.header-button:hover {
+  background-color: #555;
+}
+
+
+/* === Dark Mode Styling === */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .header-container {
+  background-color: #2c2c2c;
+}
+
+body.dark-mode a,
+body.dark-mode .header-button,
+body.dark-mode .footer a {
+  color: #00ffff;
+
+}
+
+body.dark-mode .footer {
+  background-color: #1f1f1f;
+  
+}
+
+/* === NEW: Petition Form Styling === */
+#petition-form {
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#petition-form h2 {
+  
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+#petition-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+#petition-form input[type="text"],
+#petition-form input[type="email"],
+#petition-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#petition-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+#petition-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#petition-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* === NEW: Modal Styling === */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.modal-content img {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  flex: auto;
+}
+
+.modal-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-button:hover {
+  background-color: #0056b3;
+}
+
+/* === NEW: Revealable + Image + Iframe layout === */
+.revealable {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.revealable.revealed {
+  opacity: 1;
+  transform: none;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 720px;
+  height: 400px;
+  border: none;
+  flex:auto;
+  
+}
+
+/* === NEW: Petition Container and Signatures === */
+.petition {
+  padding: 30px;
+  background-color: #eef6f7;
+  border-top: 3px solid #28a745;
+  font-family: 'Courier New', Courier, monospace;
+
+  
+}
+
+#signatures {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  
+}
+
+/* === NEW: Navbar Styling === */
+.navbar {
+  background-color: darkolivegreen;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a, /*“Apply these styles to any <a> link that is inside an element with the navbar class.”*/
+.navbar button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar a:hover,
+.navbar button:hover {
+  text-decoration: underline;
+}
+
+/* Add to CSS file */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+/* === NEW: Footer Styling === */
+.footer {
+  background-color: sandybrown;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  
+}
