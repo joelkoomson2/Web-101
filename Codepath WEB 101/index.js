@@ -144,3 +144,4 @@ closeModalButton.addEventListener("click", () => {
   modal.style.display = "none";
   clearInterval(intervalId);
 });
+
