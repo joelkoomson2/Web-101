@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>CryptoSource</title>
-    <link rel="icon" href="images/206-2066537_coin-icon-crypto-coin.png">
     <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="reset.css">
 </head>
@@ -13,13 +12,13 @@
     <!--- Headings --->
     <div class="header-container">
         <div id="header-item">
-            <img src="images/206-2066537_coin-icon-crypto-coin.png" alt="Header Image" id="header-img">
+            <img src="images/stand-with-crypto-logo.png" alt="Header Image" id="header-img">
             <div class="active revealable">
                 <h1>Digital currency</h1>
                 <h3> Sign . Fight . Join</h3>
                 <div id="header-buttons">
-                    <button type="button" class="header-button" id="sign-up">Sign up</button>
-                    <button type="button" class="header-button" id="contact-info">Contact info</button>
+                    <a href="https://www.standwithcrypto.org/?utm_source=coinbase&utm_medium=verified-partner&utm_campaign=policy-page" class="header-button" id="sign-up">Sign up</a>
+                    <a href="https://www.coinbase.com/public-policy" class="header-button" id="contact-info">Contact info</a>
                     <button type="button" class="header-button" id="reduce-motion-button">Reduce Motion</button>
                 </div>
             </div>
@@ -35,16 +34,17 @@
         </p>
     </div>
 
-    <iframe 
+    <iframe id="Liberty"
         src="https://www.youtube.com/embed/QTyzyP2Afys?si=BV27NES6hn1CSnko"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen>
+        
     </iframe>
 
     <!--- Data --->
     <div class="revealable">
         <h3>The Growth of Bitcoin</h3>
-        <img src="images/bitcoins-price-history-Final3-56d81947a532495ea0b0c3b41e880a8a.png" height="200" />
+        <img src ="images/bitcoins-price-history-Final3-56d81947a532495ea0b0c3b41e880a8a.png" height="200" id="Chart" />
         <h4>Price of Bitcoin throughout the years</h4>
         <ul>
             <li>Initially at $0.09 in 2010</li>
@@ -57,19 +57,20 @@
     <div class="revealable">
         <h2>Crypto Opinions in the 21st Century</h2>
 
-        <img src="images/cryptocurrency-bitcoin-cash-lamp-man-Graphics-17416390-1.png" height="200" />
+        <img src="images/Untitled.png" height="200" id="Century" />
         <h3>Bitcoin - Confusion</h3>
         <p>
             Bitcoin is often confused with "legal gambling" ...
         </p>
 
-        <img src="images/I told you so guy!.png " height="200" />
+        <!-- Fix for Crypto-Investing Image -->
+        <img src="images/GettyImages-1247199410.jpg" height="200" id="SBF"/>
         <h3>Crypto-Investing</h3>
         <p>
             Crypto, though controversial, has become a huge form of investment ...
         </p>
 
-        <img src="images/6068653.png" height="200" />
+        <img src="images/I_told_you_so_guy.png" height="200" id="Wealthy"/>
         <h3>Currency - The Future</h3>
         <p>
             Most currency is fiat and backed by the government and crypto is a scam ...
@@ -122,12 +123,12 @@
         <h2>Latest News & Resources</h2>
         <article>
             <h3><a class="news-link" href="https://www.coindesk.com" target="_blank">Crypto Market Surges Amid Regulatory Changes</a></h3>
-            <p>The cryptocurrency market experiences a significant rise...</p>
+            <p id="CryptoMarket">The cryptocurrency market experiences a significant rise...</p>
         </article>
 
         <article>
             <h3><a class="news-link" href="https://www.cointelegraph.com" target="_blank">Bitcoin Hits New All-Time High</a></h3>
-            <p>Bitcoin reaches an all-time high as institutional adoption continues...</p>
+            <p id="BitcoinHits">Bitcoin reaches an all-time high as institutional adoption continues...</p>
         </article>
     </section>
 
@@ -135,10 +136,6 @@
     <div class="navbar">
         <ul>
             <li><a id="home-button" href="#">Home</a></li>
-            <li><a id="about-button" href="#">About</a></li>
-            <li><a id="impact-button" href="#impact">Impact</a></li>
-            <li><a id="find-wifi" href="#find-wifi">Find Wifi</a></li>
-            <li><a id="contact" href="#contact">Contact</a></li>
             <li><button id="theme-button">Toggle Dark Mode</button></li>
         </ul>
     </div>
@@ -150,14 +147,14 @@
                 <p id="thanks-modal-content">Thank you for signing the petition!</p>
                 <button id="modal-button" class="modal-button">Close</button>
             </div>
-            <img src="images/GNEsctGXAAAEIrN.jpeg" id="header-img">
+            <img src="images/GNEsctGXAAAEIrN.jpeg" id="modal-img">
         </div>
     </div>
 
     <!-- Footer -->
     <div class="footer">
-        <a href="https://www.coinbase.com/learn/crypto-basics/essential-reading">Crypto resources</a>
-        <a href="https://www.statista.com/topics/4495/cryptocurrencies/">Crypto market</a>
+        <a href="https://www.coinbase.com/learn/crypto-basics/essential-reading" id="Crypto resources">Crypto resources</a>
+        <a href="https://www.statista.com/topics/4495/cryptocurrencies/" id="Crypto Market">Crypto market</a>
     </div>
 
     <script src="index.js"></script>
