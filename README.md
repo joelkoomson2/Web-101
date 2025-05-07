@@ -1,4 +1,4 @@
-# WEB102 Prework - *SeaMonsterCrowdfunding.com*
+# WEB101  - *CryptoSource*
 
 Submitted by: Joel Koomson
 
@@ -26,9 +26,9 @@ The following **optional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
-<a href=>
+<a href="">
   <img 
-       src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenZlbjQ3NDdocXB0ZmowcjIwbWEyaHlzM3N6cW80cXJqbnNxbng2eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eDocEtUVHFaOVWV87a/giphy.gif" 
+       src="" 
        alt="Watch the walkthrough" 
        width="700" 
        height="394" />
